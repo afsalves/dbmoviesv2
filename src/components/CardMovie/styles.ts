@@ -4,7 +4,7 @@ import {theme} from '@global/styles/theme'
 
 export const Card = styled.TouchableOpacity`
     width: 350px;
-    height: 400px;
+    height: 450px;
     align-items: center;
     background-color:${theme.colors.secondary40}
     justify-content: center;
@@ -14,6 +14,11 @@ export const Card = styled.TouchableOpacity`
     padding: 20px;
     
 `
+export const Favorite = styled.TouchableOpacity`
+    align-items: center,
+    align-self: flex-end,
+`
+
 export const Banner = styled.Image`
     width: 150px;
     height: 250px;
