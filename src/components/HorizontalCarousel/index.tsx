@@ -27,12 +27,23 @@ export function HorizontalCarousel ({data, title}: Props) {
         data={data}
         keyExtractor={item => item.id} 
         renderItem={({ item }) => {
-          const name = item.original_title
+          const name = item.title
           const rate = item.vote_average
           const id = item.id
           const img = baseUrl.concat(item.poster_path)
+          const overview = item.overview
+          const originalName = item.original_title
+          const genres = item.genres_id
           return (
-            <CardMovie id={id} name={name}rate={rate} image={img}/>
+            <CardMovie 
+            id={id} 
+            name={name}
+            rate={rate} 
+            image={img}
+            overview={overview}
+            originalName={originalName}
+            genres={genres}
+            />
           )
       }}
       />
