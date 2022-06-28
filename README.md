@@ -1,5 +1,5 @@
-<p align="center">
-<img width="315" alt="image" src="https://user-images.githubusercontent.com/48930961/174232196-9c102739-f2a9-4690-bedb-b4bb17fa85df.png">
+<p align="center">![image](https://user-images.githubusercontent.com/48930961/176243588-d83dcace-6993-4f4d-aef9-7e4a09e5644f.png)
+
 </p>
 
 ## 💻 Projeto
@@ -36,7 +36,7 @@ Em seguida, inicie o projeto.
 expo start
 ```
 
-Lembre-se de definir no arquivo .env as configurações da sua api key.
+Lembre-se de definir no arquivo config.js as configurações da sua api key.
 
 ```cl
 REACT_APP_API_KEY =
