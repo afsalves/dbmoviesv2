@@ -1,6 +1,6 @@
-<p align="center">
+
   ![spider](https://user-images.githubusercontent.com/48930961/176250118-5ec92752-c93a-4e34-a239-4d89eb195fcb.png)
-</p>
+
 
 
 
