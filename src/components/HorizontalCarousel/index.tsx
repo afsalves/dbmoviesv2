@@ -10,6 +10,8 @@ type Props = {
 
 export function HorizontalCarousel ({data, title}: Props) {
 
+  const baseUrl = 'https://image.tmdb.org/t/p/original'
+
   return (
     <>
       <Styled.CategorieWrapper>
@@ -19,18 +21,32 @@ export function HorizontalCarousel ({data, title}: Props) {
         horizontal
         style={{ marginTop:20 }}
         showsHorizontalScrollIndicator={false}
+        autoplay
+        autoplayDelay={3}
+        autoplayLoop
         data={data}
         keyExtractor={item => item.id} 
         renderItem={({ item }) => {
-          const name = item.original_title
+          const name = item.title
           const rate = item.vote_average
           const id = item.id
+          const img = baseUrl.concat(item.poster_path)
+          const overview = item.overview
+          const originalName = item.original_title
+          const genres = item.genres_id
           return (
-            <CardMovie id={id} name={name}rate={rate}/>
+            <CardMovie 
+            id={id} 
+            name={name}
+            rate={rate} 
+            image={img}
+            overview={overview}
+            originalName={originalName}
+            genres={genres}
+            />
           )
       }}
       />
-      <CardMovie id={1} name={'Movie'} rate={5.5}/>
     </>
   );
 };
