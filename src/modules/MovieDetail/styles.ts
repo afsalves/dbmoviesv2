@@ -14,6 +14,13 @@ export const Wrapper = styled.View`
   align-items: center;
   padding: 20px;
 `;
+
+export const Banner = styled.Image `
+  width: 200px;
+  height: 300px;
+  align-self: center;
+`
+
 export const MovieInfo = styled.View`
     flex: 1;
     align-items: center;
@@ -22,6 +29,7 @@ export const MovieInfo = styled.View`
 `
 
 export const Name = styled.Text`
+  margin-top: 20px;
   font-family: ${theme.fonts.heading};
   color: ${theme.colors.heading};
   font-size: 25px;
@@ -45,7 +53,7 @@ export const Overview = styled.Text`
   color: ${theme.colors.highlight};
   font-size: 16px;
 `
-export const GeneresWrapp = styled.View`
+export const FooterWrapp = styled.View`
   align-items: center;
   justify-content: space-around;
   margin-top:30px;
@@ -53,16 +61,16 @@ export const GeneresWrapp = styled.View`
   flex-direction: row;
   background-color: 'white'
 `
-
-export const GeneresTags = styled.View` 
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  width: 70px;
-  height: 20px;
-  background-color: ${theme.colors.primary};
+export const RateWrapper = styled.View `
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+    flex-direction: row;
+    width: 95%;
 `
-export const GeneresText = styled.Text`
-  font-family: ${theme.fonts.text};
-  color: ${theme.colors.heading};
+export const Rate = styled.Text`
+    margin-left: 10px;
+    font-family: ${theme.fonts.text};
+    color: ${theme.colors.secondary20};
+    font-size: 20px;    
 `
