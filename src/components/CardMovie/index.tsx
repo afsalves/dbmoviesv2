@@ -8,12 +8,14 @@ type Props = TouchableOpacityProps & {
   id: number;
   name: string;
   rate: number;
+  image: string;
 }
 
 export function CardMovie({
   id,
   name,
   rate,
+  image,
 }: Props){
 
   const nav = useNavigation();
@@ -25,7 +27,8 @@ export function CardMovie({
           params: {id:id}
         } )
       }}>
-        <Styled.Title numberOfLines={3} >{name}</Styled.Title>
+        <Styled.Banner source={{uri: image}}/>
+        <Styled.Title numberOfLines={2}>{name}</Styled.Title>
         <Styled.RateWrapper>
           <Star width={30} height={30} />
         <Styled.Rate>{`Rate ${rate}`}</Styled.Rate>
