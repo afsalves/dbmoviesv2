@@ -3,8 +3,8 @@ import {theme} from '@global/styles/theme'
 
 
 export const Card = styled.TouchableOpacity`
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 400px;
     align-items: center;
     background-color:${theme.colors.secondary40}
     justify-content: center;
@@ -14,7 +14,13 @@ export const Card = styled.TouchableOpacity`
     padding: 20px;
     
 `
+export const Banner = styled.Image`
+    width: 150px;
+    height: 250px;
+`
+
 export const Title = styled.Text`
+    margin-top: 10px;
     font-family: ${theme.fonts.text};
     color: ${theme.colors.heading};
     font-size: 20px;
