@@ -37,7 +37,6 @@ const Home: React.FC = () => {
         setLoading(true);
         const topRated = await getTopRatedMovies();
         setTopRatedList(topRated.results);
-        console.log('rated', topRatedList)
       } catch (err) {
         console.error(err);
       } finally {
