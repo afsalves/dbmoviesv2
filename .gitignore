@@ -19,4 +19,4 @@ yarn.lock
 .DS_Store
 
 #api keys
-.config.js
+config.js
