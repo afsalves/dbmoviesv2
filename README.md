@@ -2,6 +2,9 @@
   <img width="315" alt="image" src="https://user-images.githubusercontent.com/48930961/174232196-9c102739-f2a9-4690-bedb-b4bb17fa85df.png">
 </p>
 
+
+![spider](https://user-images.githubusercontent.com/48930961/176250118-5ec92752-c93a-4e34-a239-4d89eb195fcb.png)
+
 ## 💻 Projeto
 
 Aplicativo para ver filmes recomendados, mais recentes e mais populares. Veja reviews dos seus filmes favoritos.
