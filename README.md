@@ -1,5 +1,5 @@
-<p align="center">![image](https://user-images.githubusercontent.com/48930961/176243588-d83dcace-6993-4f4d-aef9-7e4a09e5644f.png)
-
+<p align="center">
+  <img width="315" alt="image" src="https://user-images.githubusercontent.com/48930961/174232196-9c102739-f2a9-4690-bedb-b4bb17fa85df.png">
 </p>
 
 ## 💻 Projeto
