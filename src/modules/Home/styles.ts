@@ -7,6 +7,7 @@ export const Container = styled.SafeAreaView `
     background-color: transparent;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
 `
 
 export const Wrapper = styled.ScrollView`
