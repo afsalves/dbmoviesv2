@@ -22,7 +22,6 @@ const Home: React.FC = () => {
         setLoading(true);
         const popular = await getPopularMovies();
         setPopularList(popular.results);
-        console.log('popular', popularList)
       } catch (err) {
         console.error(err);
       } finally {
@@ -38,9 +37,9 @@ const Home: React.FC = () => {
         setLoading(true);
         const topRated = await getTopRatedMovies();
         setTopRatedList(topRated.results);
+        console.log('rated', topRatedList)
       } catch (err) {
         console.error(err);
-        console.log('rated', topRatedList)
       } finally {
         setLoading(false);
       }
