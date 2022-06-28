@@ -6,7 +6,6 @@ interface IDBMoviesContext {
     getLastestMovies: () =>Promise<any>
     getPopularMovies: () =>Promise<any>
     getTopRatedMovies: () =>Promise<any>
-    getMovieDetails: (id:number) =>Promise<any>
 }
 
 
@@ -29,17 +28,11 @@ export const DBMoviesProvider: React.FC =({children}) =>{
         return response.data
     }, []);
 
-    const getMovieDetails = useCallback(async (id:number) =>{
-        const response = await moviesApi.get(`/${id}?`, {params: {api_key: config.REACT_APP_API_KEY}})
-        return response.data
-    }, []);
-
     return (
         <DBMoviesContext.Provider
         value={{
             getLastestMovies,
             getPopularMovies,
-            getMovieDetails,
             getTopRatedMovies
         }}>
             {children}
